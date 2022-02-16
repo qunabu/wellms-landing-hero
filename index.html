@@ -68,6 +68,25 @@
       #synced-video-wrapper video {
         display: block;
       }
+      @media (max-width: 1068px) {
+        #synced-video-wrapper,
+        #main-video-wrapper {
+          width: 90%;
+          margin-bottom: 20px;
+        }
+        #synced-video-wrapper {
+          max-width: 500px;
+        }
+
+        #synced-video-wrapper video,
+        #main-video-wrapper video {
+          max-height: 45vh;
+        }
+
+        main > div {
+          flex-direction: column;
+        }
+      }
     </style>
   </head>
   <body>
